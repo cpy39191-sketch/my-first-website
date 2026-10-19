@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nature Discovery</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <nav>
+
+    <a href="#" class="logo">
+      Nature<span>Discovery</span>
+    </a>
+
+    <ul>
+      <li><a href="#explore">Explore</a></li>
+      <li><a href="#facts">Facts</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+    </ul>
+
+  </nav>
+
+
+  <!-- HERO -->
+
+  <header class="hero">
+
+    <div class="hero-content">
+
+      <p class="eyebrow">
+        Explore • Learn • Wonder
+      </p>
+
+      <h1>
+        Nature<br>
+        Discovery
+      </h1>
+
+      <p class="hero-description">
+        Discover the world's most beautiful forests, beaches,
+        mountains, deserts, plants and wildlife.
+      </p>
+
+      <a href="#explore" class="hero-button">
+        Start Exploring ↓
+      </a>
+
+    </div>
+
+  </header>
+
+
+  <!-- CATEGORY EXPLORER -->
+
+  <section class="categories" id="explore">
+
+    <!-- CATEGORY VIEW -->
+
+    <div id="categoryView">
+
+      <div class="section-heading">
+
+        <span>Explore the Earth</span>
+
+        <h2>Choose Your Adventure</h2>
+
+        <p>
+          Select a part of nature to discover some of the world's
+          most beautiful and famous places.
+        </p>
+
+      </div>
+
+
+      <div class="category-grid">
+
+        <!-- FORESTS -->
+
+        <div
+          class="category-card"
+          data-category="forests"
+        >
+
+          <img
+            src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=85"
+            alt="Forest"
+          >
+
+          <div class="category-overlay">
+
+            <div>
+              <h3>Forests</h3>
+              <p>Ancient trees and hidden ecosystems.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- BEACHES -->
+
+        <div
+          class="category-card"
+          data-category="beaches"
+        >
+
+          <img
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85"
+            alt="Beautiful beach"
+          >
+
+          <div class="category-overlay">
+
+            <div>
+              <h3>Beaches & Coasts</h3>
+              <p>Crystal water and incredible coastlines.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- MOUNTAINS -->
+
+        <div
+          class="category-card"
+          data-category="mountains"
+        >
+
+          <img
+            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85"
+            alt="Mountain landscape"
+          >
+
+          <div class="category-overlay">
+
+            <div>
+              <h3>Mountains</h3>
+              <p>Wild landscapes reaching the sky.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- DESERTS -->
+
+        <div
+          class="category-card"
+          data-category="deserts"
+        >
+
+          <img
+            src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1200&q=85"
+            alt="Desert"
+          >
+
+          <div class="category-overlay">
+
+            <div>
+              <h3>Deserts</h3>
+              <p>Life thriving in extreme environments.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- PLANTS -->
+
+        <div
+          class="category-card"
+          data-category="plants"
+        >
+
+          <img
+            src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1200&q=85"
+            alt="Green plants"
+          >
+
+          <div class="category-overlay">
+
+            <div>
+              <h3>Plants & Flowers</h3>
+              <p>The colourful world of plant life.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- WILDLIFE -->
+
+        <div
+          class="category-card"
+          data-category="wildlife"
+        >
+
+          <img
+            src="https://images.unsplash.com/photo-1452570053594-1b985d6ea890?auto=format&fit=crop&w=1200&q=85"
+            alt="Wildlife"
+          >
+
+          <div class="category-overlay">
+
+            <div>
+              <h3>Wildlife</h3>
+              <p>Meet the creatures sharing our planet.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- LOCATION EXPLORER -->
+
+    <div id="locationView" class="location-view hidden">
+
+      <button id="backButton" class="back-button">
+        ← Back to Categories
+      </button>
+
+      <div class="section-heading">
+
+        <span id="locationEyebrow">
+          Explore
+        </span>
+
+        <h2 id="locationTitle">
+          Amazing Places
+        </h2>
+
+        <p id="locationDescription">
+          Discover incredible places around the world.
+        </p>
+
+      </div>
+
+
+      <div id="locationGrid" class="location-grid">
+        <!-- JavaScript adds locations here -->
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FACTS -->
+
+  <section class="fact-section" id="facts">
+
+    <div class="fact-box">
+
+      <div class="fact-icon">
+        🌿
+      </div>
+
+      <h2>
+        Did You Know?
+      </h2>
+
+      <p id="fact">
+        Click the button below to discover a fascinating
+        fact about nature.
+      </p>
+
+      <button
+        class="fact-button"
+        id="factButton"
+      >
+        Discover a Fact ✨
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- GALLERY -->
+
+  <section class="gallery" id="gallery">
+
+    <div class="section-heading">
+
+      <span>
+        Nature Photography
+      </span>
+
+      <h2>
+        A World Worth Exploring
+      </h2>
+
+      <p>
+        Take a moment to appreciate the incredible places
+        and life found across our planet.
+      </p>
+
+    </div>
+
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item large">
+        <img
+          src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=85"
+          alt="Forest"
+        >
+      </div>
+
+      <div class="gallery-item">
+        <img
+          src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85"
+          alt="Desert"
+        >
+      </div>
+
+      <div class="gallery-item">
+        <img
+          src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1000&q=85"
+          alt="Mountain"
+        >
+      </div>
+
+      <div class="gallery-item">
+        <img
+          src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1000&q=85"
+          alt="Plant"
+        >
+      </div>
+
+      <div class="gallery-item">
+        <img
+          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=85"
+          alt="Beach"
+        >
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <h2>
+      Nature Discovery
+    </h2>
+
+    <p>
+      Explore the beauty. Learn about the planet.
+    </p>
+
+    <div class="footer-links">
+
+      <a href="#explore">
+        Explore
+      </a>
+
+      <a href="#facts">
+        Facts
+      </a>
+
+      <a href="#gallery">
+        Gallery
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
